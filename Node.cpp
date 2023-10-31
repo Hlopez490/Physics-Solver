@@ -18,7 +18,7 @@ Node::Node(double inCoefficient, int inExponent)
 ostream& operator <<(ostream &out, Node* n){
     if(n != nullptr){
 
-        if(abs(n->getCoef()) > 1) out <<abs(n->getCoef());
+        if(abs(n->getCoef()) > 1) out << abs(n->getCoef());
         if(abs(n->getCoef()) == 1 &&  abs(n->getExp()) == 0 ) out <<abs(n->getCoef());
         if(abs(n->getCoef()) >= 1
         &&  abs(n->getExp()) > 0 ) out << "x";
